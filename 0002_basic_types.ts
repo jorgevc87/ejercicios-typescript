@@ -18,7 +18,12 @@ var inferredString = "this is a string"
 
 var inferredNumber = 1
 
-inferredNumber = inferredString
+//inferredNumber = inferredString
+
+
+
+
+
 
 
 
