@@ -16,7 +16,7 @@ let u: unknown = "an unknow"
 u = 1
 let aNumber2: number = 2
 
-aNumber2 = <number>u
+aNumber2 = <number> u //explicit casting
 
 
 
