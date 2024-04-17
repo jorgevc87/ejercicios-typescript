@@ -14,6 +14,36 @@ nullishCheck(1)
 nullishCheck(null)
 nullishCheck(undefined)
 
+function testNullOperands(a: number, b: number | null | undefined) {
+    let addResult = a + (b ?? 0);
+    /*
+    Here we are using nullish coallesing
+    to set a default value if b is null o undefined.
+    */
+}
+
+
+/*
+Here we have an error, globalString is attemping to use before was assignment a value
+Typescript compiler does not identify setGlobalString is assigning a value to globalString
+*/
+var globalString: string
+setGlobalString("this string is set")
+
+console.log(`globalString = ${globalString}`) 
+
+function setGlobalString(value: string) {
+    globalString = value
+}
+
+
+
+
+
+
+
+
+
 
 
 
